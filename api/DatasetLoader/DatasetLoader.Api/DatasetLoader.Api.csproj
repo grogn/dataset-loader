@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DatasetLoader.Api.Dto\DatasetLoader.Api.Dto.csproj" />
+      <ProjectReference Include="..\DatasetLoader.Api.Implementation\DatasetLoader.Api.Implementation.csproj" />
+      <ProjectReference Include="..\DatasetLoader.DataAccess.Mssql\DatasetLoader.DataAccess.Mssql.csproj" />
+      <ProjectReference Include="..\DatasetLoader.UseCases\DatasetLoader.UseCases.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+
+</Project>
